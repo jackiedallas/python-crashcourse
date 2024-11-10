@@ -38,26 +38,28 @@ print(f"{yb} {invitation}.")
 print(f"{guest_list}\n")
 
 popped_guest = guest_list.pop()
-uninvite = f"Unfortunately I now only have two seats availabe for my dinner, sorry {popped_guest.title()} you can't come."
-print(uninvite)
+uninvited = f"Unfortunately I now only have two seats available for my dinner, sorry {popped_guest.title()} you can't come."
+print(uninvited)
 print(f"{guest_list}\n")
 
 popped_guest = guest_list.pop()
-uninvite = f"Unfortunately I now only have two seats availabe for my dinner, sorry {popped_guest.title()} you can't come."
-print(uninvite)
+uninvited = f"Unfortunately I now only have two seats available for my dinner, sorry {popped_guest.title()} you can't come."
+print(uninvited)
 print(f"{guest_list}\n")
 
 popped_guest = guest_list.pop()
-uninvite = f"Unfortunately I now only have two seats availabe for my dinner, sorry {popped_guest.title()} you can't come."
-print(uninvite)
+uninvited = f"Unfortunately I now only have two seats available for my dinner, sorry {popped_guest.title()} you can't come."
+print(uninvited)
 print(f"{guest_list}\n")
 
 popped_guest = guest_list.pop()
-uninvite = f"Unfortunately I now only have two seats availabe for my dinner, sorry {popped_guest.title()} you can't come."
-print(uninvite)
+uninvited = f"Unfortunately I now only have two seats available for my dinner, sorry {popped_guest.title()} you can't come."
+print(uninvited)
 print(f"{guest_list}\n")
 
 remaining_guest = guest_list
+number_of_guest = len(remaining_guest) # use the 'len' method to get the length of a list
+print(f"I'm inviting {number_of_guest} people to my dinner.")
 print(f"{remaining_guest[0].title()} {invitation}.")
 print(f"{remaining_guest[-1].title()} {invitation}.")
 
