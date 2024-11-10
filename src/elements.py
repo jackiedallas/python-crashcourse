@@ -35,14 +35,70 @@ motorcycles.append('kawasaki')
 # print(motorcycles)
 # print(f"{too_expensive.title()} motorcycles are too expensive for me.")
 
-guest_list = ['Drake', 'Kobe', 'Wayne']
+guest_list = ['drake', 'kobe', 'wayne']
 owl = guest_list[0].title()
 athlete = guest_list[1].title()
 goat_rapper = guest_list[2].title()
-message = f"The artist I listen to the most is {owl}.\nMy all time favorite basketball player is {athlete}.\nThe Greatest Of All Time in Hip-Hop is {goat_rapper}."
+print(guest_list)
 
-print(message)
-guest_list.append('anthony edwards')
-antman = guest_list[-1]
-new_message = f"My favorite current NBA player is {antman.title()}."
-print(new_message)
+invitation = "you are invited to my dinner"
+not_available = "isn't available for the dinner"
+
+print(f"{owl} {invitation}.")
+print(f"{athlete} {invitation}.")
+print(f"{goat_rapper} {invitation}.")
+
+print(f"{athlete} {not_available}")
+unavailable = guest_list.remove('kobe')
+print(guest_list)
+
+genius = 'kanye'
+guest_list.insert(1, genius)
+goat_producer = guest_list[1].title()
+print(guest_list)
+
+print(f"{goat_producer} {invitation}.")
+print(f"{owl} {invitation}.")
+print(f"{goat_rapper} {invitation}.")
+print("I found a bigger table")
+
+guest_list.insert(0, 'mj')
+guest_list.insert(2, 'hov')
+guest_list.append('youngboy')
+
+mike = guest_list[0].upper()
+jay = guest_list[2].title()
+yb = guest_list[-1].title()
+print(f"{mike} {invitation}.")
+print(f"{jay} {invitation}.")
+print(f"{yb} {invitation}.")
+print(guest_list)
+
+popped_guest = guest_list.pop()
+uninvite = f"Unfortunately I now only have two seats availabe for my dinner, sorry {popped_guest.title()} you can't come."
+print(uninvite)
+print(guest_list)
+
+popped_guest = guest_list.pop()
+uninvite = f"Unfortunately I now only have two seats availabe for my dinner, sorry {popped_guest.title()} you can't come."
+print(uninvite)
+print(guest_list)
+
+popped_guest = guest_list.pop()
+uninvite = f"Unfortunately I now only have two seats availabe for my dinner, sorry {popped_guest.title()} you can't come."
+print(uninvite)
+print(guest_list)
+
+popped_guest = guest_list.pop()
+uninvite = f"Unfortunately I now only have two seats availabe for my dinner, sorry {popped_guest.title()} you can't come."
+print(uninvite)
+print(guest_list)
+
+remaining_guest = guest_list
+print(f"{remaining_guest[0].title()} {invitation}.")
+print(f"{remaining_guest[-1].title()} {invitation}.")
+
+del remaining_guest[0]
+del remaining_guest[-1]
+
+print(remaining_guest)
