@@ -5,7 +5,11 @@ motorcycles.append('yamaha')
 motorcycles.append('suzuki')
 # print(motorcycles)
 motorcycles.append('kawasaki')
-# print(motorcycles)
+print(f"Here is the orginal order:\n{motorcycles}\n")
+motorcycles.sort() # use the sort method to rearrange the list to alphabetical order
+print(f"Here is the alphabetical order:\n{motorcycles}\n")
+motorcycles.sort(reverse=True) # pass the 'reverse=True' argument to reverse the alphabetical order
+print(f"Here is the reversed alphabetical order:\n{motorcycles}\n")
 
 # you can insert elements to specific indexes using teh insert method, add 'ducati' to the beginning of the list
 # motorcycles.insert(0, 'ducati')
@@ -39,23 +43,23 @@ guest_list = ['drake', 'kobe', 'wayne']
 owl = guest_list[0].title()
 athlete = guest_list[1].title()
 goat_rapper = guest_list[2].title()
-print(guest_list)
+print(f"{guest_list}\n")
 
 invitation = "you are invited to my dinner"
 not_available = "isn't available for the dinner"
 
 print(f"{owl} {invitation}.")
 print(f"{athlete} {invitation}.")
-print(f"{goat_rapper} {invitation}.")
+print(f"{goat_rapper} {invitation}.\n")
 
 print(f"{athlete} {not_available}")
 unavailable = guest_list.remove('kobe')
-print(guest_list)
+print(f"{guest_list}")
 
 genius = 'kanye'
 guest_list.insert(1, genius)
 goat_producer = guest_list[1].title()
-print(guest_list)
+print(f"{guest_list}\n")
 
 print(f"{goat_producer} {invitation}.")
 print(f"{owl} {invitation}.")
@@ -69,30 +73,30 @@ guest_list.append('youngboy')
 mike = guest_list[0].upper()
 jay = guest_list[2].title()
 yb = guest_list[-1].title()
-print(f"{mike} {invitation}.")
+print(f"\n{mike} {invitation}.")
 print(f"{jay} {invitation}.")
 print(f"{yb} {invitation}.")
-print(guest_list)
+print(f"{guest_list}\n")
 
 popped_guest = guest_list.pop()
 uninvite = f"Unfortunately I now only have two seats availabe for my dinner, sorry {popped_guest.title()} you can't come."
 print(uninvite)
-print(guest_list)
+print(f"{guest_list}\n")
 
 popped_guest = guest_list.pop()
 uninvite = f"Unfortunately I now only have two seats availabe for my dinner, sorry {popped_guest.title()} you can't come."
 print(uninvite)
-print(guest_list)
+print(f"{guest_list}\n")
 
 popped_guest = guest_list.pop()
 uninvite = f"Unfortunately I now only have two seats availabe for my dinner, sorry {popped_guest.title()} you can't come."
 print(uninvite)
-print(guest_list)
+print(f"{guest_list}\n")
 
 popped_guest = guest_list.pop()
 uninvite = f"Unfortunately I now only have two seats availabe for my dinner, sorry {popped_guest.title()} you can't come."
 print(uninvite)
-print(guest_list)
+print(f"{guest_list}\n")
 
 remaining_guest = guest_list
 print(f"{remaining_guest[0].title()} {invitation}.")
