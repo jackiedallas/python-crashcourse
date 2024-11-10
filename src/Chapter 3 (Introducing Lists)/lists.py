@@ -9,7 +9,7 @@ print(bicycles)
 # print only the first element of the list ('trek')
 print(bicycles[0])
 
-# print the first element and use the title method to capitilize it, making it look more formal
+# print the first element and use the title method to capitalize it, making it look more formal
 print(bicycles[0].title())
 
 # print the last element ('specialized') of the list

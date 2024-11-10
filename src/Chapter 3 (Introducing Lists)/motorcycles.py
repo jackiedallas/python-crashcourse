@@ -5,7 +5,7 @@ motorcycles.append('yamaha')
 motorcycles.append('suzuki')
 # print(motorcycles)
 motorcycles.append('kawasaki')
-print(f"Here is the orginal order:\n{motorcycles}\n")
+print(f"Here is the original order:\n{motorcycles}\n")
 motorcycles.sort() # use the sort method to rearrange the list to alphabetical order
 print(f"Here is the alphabetical order:\n{motorcycles}\n")
 motorcycles.sort(reverse=True) # pass the 'reverse=True' argument to reverse the alphabetical order
