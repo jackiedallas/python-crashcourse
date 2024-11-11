@@ -18,6 +18,6 @@ print(f"\nMy friend's favorites are:\n{friend_foods}")
 
 for my_food in my_foods:
     print(f"\nI love {my_food.title()}.")
-    
+
 for friend_food in friend_foods:
     print(f"\nMy friend loves {friend_food.title()}.")

@@ -1,4 +1,6 @@
-# to make a slice you specify the index of the first and last elements you want to work with
+'''to make a slice you specify the index of the first and
+last elements you want to work with '''
+
 players = ['jackie', 'devante', 'trevon', 'tumaini', 'kristian']
 print(f"{players}\n")
 
@@ -8,7 +10,9 @@ print(players[0:3])
 # print the middle players
 print(f"\n{players[1:4]}")
 
-# omitting the first index in a slice starts your slice at the beginning of the list
+''' omitting the 1st index in a slice
+starts your slice at the beginning of the list'''
+
 print(f"\n{players[:4]}")
 
 # omit the second index and start your slice at the end of the list
