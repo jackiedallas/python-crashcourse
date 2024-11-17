@@ -1,9 +1,9 @@
 # create dictionary storing the results of a poll
 favorite_languages = {
-    'jen': 'python',
-    'sarah': 'c',
-    'edward': 'rust',
-    'phil': 'python'
+    'jen': ['python', 'rust'],
+    'sarah': ['c'],
+    'edward': ['rust', 'c#', 'javascript'],
+    'phil': ['python', 'java', 'dart']
 }
 
 # put language values in variable using title method
@@ -21,22 +21,30 @@ favorite_languages = {
 # for k, v in favorite_languages.items():
 #     print(f"{k.title()}'s favorite programming language is {v.title()}.")
 
-for name in favorite_languages.keys():
-    # print(f"{name.title()}")
-    print(f"Hi {name.title()}!")
-    friends = ['phil', 'sarah']
-    if name in friends:
-        lang = favorite_languages[name].title()
-        print(f"\t{name.title()}, I see you love {lang}!")
-    if 'erin' not in favorite_languages.keys():
-        print("Erin, please take our poll!")
+# for name in favorite_languages.keys():
+#     # print(f"{name.title()}")
+#     print(f"Hi {name.title()}!")
+#     friends = ['phil', 'sarah']
+#     if name in friends:
+#         lang = favorite_languages[name].title()
+#         print(f"\t{name.title()}, I see you love {lang}!")
+#     if 'erin' not in favorite_languages.keys():
+#         print("Erin, please take our poll!")
 
-for name in sorted(favorite_languages.keys()):
-    print(f"{name.title()} thank you for taking our poll!")
+# for name in sorted(favorite_languages.keys()):
+#     print(f"{name.title()} thank you for taking our poll!")
 
-print("The following languages have been mentioned:")
-# for lang in favorite_languages.values():
+# print("The following languages have been mentioned:")
+# # for lang in favorite_languages.values():
+# #     print(f"{lang.title()}")
+
+# for lang in set(favorite_languages.values()):
 #     print(f"{lang.title()}")
 
-for lang in set(favorite_languages.values()):
-    print(f"{lang.title()}")
+for name, languages in favorite_languages.items():
+    print(f"\n{name.title()}'s favorite languages are:")
+    for language in languages:
+        if language == 'javascript':
+            print("\tJavaScript")
+        else:
+            print(f"\t{language.title()}")
