@@ -27,6 +27,8 @@ if new_users:
 #         if username == 'admin':
 #             print(admin_message)
 #         else:
-#             print(f"Hello {username.title()}, thank you for logging in again!")
+#             print(
+    # f"Hello {username.title()}, thank you for logging in again!"
+    # )
 # else:
 #     print(empty_message)
