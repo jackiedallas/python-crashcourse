@@ -4,7 +4,7 @@ alex = {
     'age': '27',
     'location': {
         'city': 'new york',
-        'country': 'usa'
+        'country': 'united states'
     }
 }
 jordan = {
@@ -48,10 +48,9 @@ people = [alex, jordan, taylor, casey, morgan]
 
 for person in people:
     full_name = f"{person['first_name'].title()} {person['last_name'].title()}"
-    city = person['location']['city']
-    country = person['location']['country']
-    if country == 'usa':
-        print(f"{full_name} is {person['age']} years old and lives in {city.title()}, {country.upper()}.")
-    else:
-        country.title()
-        print(f"{full_name} is {person['age']} years old and lives in {city.title()}, {country.title()}.")
+    city = person['location']['city'].title()
+    country = person['location']['country'].title()
+    print(
+        f"{full_name} is {person['age']} years old and lives in "
+        f"{city}, {country}."
+    )
