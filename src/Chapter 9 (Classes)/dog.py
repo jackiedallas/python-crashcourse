@@ -15,10 +15,16 @@ class Dog:
         print(f"{self.name} rolled over!")
 
 
+# create instances of dog
 my_dog = Dog('Bandit', 12)
+your_dog = Dog('Bingo', 6)
+
 print(f"My dog's name is {my_dog.name}.")
 print(f"My dog is {my_dog.age} years old.")
-
-# Call the methods associated with the Dog class.
 my_dog.sit()
 my_dog.roll_over()
+
+print(f"My dog's name is {your_dog.name}.")
+print(f"My dog is {your_dog.age} years old.")
+your_dog.sit()
+your_dog.roll_over()
