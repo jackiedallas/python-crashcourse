@@ -12,6 +12,7 @@ class User:
         self.gender = gender
         self.user_name = user_name
         self.email = email
+        self.login_attempts = 0
 
     def describe_user(self):
         """Print a message describing the user."""
@@ -29,6 +30,16 @@ class User:
         print(f"Hello {self.first_name} {self.last_name}!")
         print(f"We setup your profile with the username '{self.user_name}'.")
 
+    def increment_login_attempts(self):
+        self.login_attempts += 1
+
+    def reset_login_attempts(self):
+        print("Resetting login attempts.")
+        self.login_attempts = 0
+
+    def show_login_attempts(self):
+        print(f"Login Attempts: {self.login_attempts}")
+
 
 my_user = User(
     'Jackie',
@@ -41,3 +52,11 @@ my_user = User(
 
 my_user.describe_user()
 my_user.greet_user()
+my_user.increment_login_attempts()
+my_user.increment_login_attempts()
+my_user.increment_login_attempts()
+my_user.show_login_attempts()
+# print(my_user.login_attempts)
+my_user.reset_login_attempts()
+# print(my_user.login_attempts)
+my_user.show_login_attempts()
