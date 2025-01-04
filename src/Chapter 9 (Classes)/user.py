@@ -39,24 +39,3 @@ class User:
 
     def show_login_attempts(self):
         print(f"Login Attempts: {self.login_attempts}")
-
-
-# my_user = User(
-#     'Jackie',
-#     'Dallas',
-#     32,
-#     'Male',
-#     'jackieray24',
-#     'jdallas@gmail.com'
-#     )
-
-# my_user.describe_user()
-# my_user.greet_user()
-# my_user.increment_login_attempts()
-# my_user.increment_login_attempts()
-# my_user.increment_login_attempts()
-# my_user.show_login_attempts()
-# # print(my_user.login_attempts)
-# my_user.reset_login_attempts()
-# # print(my_user.login_attempts)
-# my_user.show_login_attempts()
