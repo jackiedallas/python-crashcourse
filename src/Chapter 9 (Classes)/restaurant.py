@@ -13,8 +13,8 @@ class Restaurant:
     def describe_restaurant(self):
         """Print a message describing the restaurant."""
         print(textwrap.dedent(f"""
-        Restaurant Name: {self.restaurant_name}
-        Cuisine Type: {self.cuisine_type}
+        Restaurant Name: {self.restaurant_name.title()}
+        Cuisine Type: {self.cuisine_type.title()}
         """).strip())
 
     def open_restaurant(self):
@@ -37,16 +37,16 @@ class Restaurant:
         print(f"{self.number_served} people have been served!")
 
 
-my_restaurant = Restaurant('Big Mamas', 'Southern Style')
-print(my_restaurant.restaurant_name)
-print(my_restaurant.cuisine_type)
-# print(my_restaurant.number_served)
-my_restaurant.describe_restaurant()
-my_restaurant.open_restaurant()
-my_restaurant.set_number_served(20)
-my_restaurant.increment_number_served(15)
-my_restaurant.get_number_served()
-my_restaurant.increment_number_served(-1)
-my_restaurant.increment_number_served(100)
-my_restaurant.get_number_served()
+# my_restaurant = Restaurant('Big Mamas', 'Southern Style')
+# print(my_restaurant.restaurant_name)
+# print(my_restaurant.cuisine_type)
+# # print(my_restaurant.number_served)
+# my_restaurant.describe_restaurant()
+# my_restaurant.open_restaurant()
+# my_restaurant.set_number_served(20)
+# my_restaurant.increment_number_served(15)
+# my_restaurant.get_number_served()
+# my_restaurant.increment_number_served(-1)
+# my_restaurant.increment_number_served(100)
+# my_restaurant.get_number_served()
 # print(my_restaurant.number_served)
