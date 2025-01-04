@@ -18,12 +18,16 @@ class IceCreamStand(Restaurant):
         """Print list of flavors available."""
         print("Available Flavors:")
         for flavor in self.flavors:
-            print(f"- {flavor}")
+            print(f"- {flavor.title()}")
 
 
 my_ice_cream_stand = IceCreamStand('Ritas', 'gelato')
 my_ice_cream_stand.describe_restaurant()
+my_ice_cream_stand.open_restaurant()
 my_ice_cream_stand.set_flavors('peach', 'apple')
 my_ice_cream_stand.describe_flavors()
 my_ice_cream_stand.set_flavors('mango', 'strawberry', 'blueberry', 'lime')
 my_ice_cream_stand.describe_flavors()
+my_ice_cream_stand.increment_number_served(15)
+my_ice_cream_stand.increment_number_served(5)
+my_ice_cream_stand.get_number_served()

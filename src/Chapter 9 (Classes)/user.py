@@ -17,17 +17,17 @@ class User:
     def describe_user(self):
         """Print a message describing the user."""
         print(textwrap.dedent(f"""
-        First Name: {self.first_name}
-        Last Name: {self.last_name}
+        First Name: {self.first_name.title()}
+        Last Name: {self.last_name.title()}
         Age: {self.age}
-        Gender: {self.gender}
+        Gender: {self.gender.title()}
         Username: {self.user_name}
         E-Mail Address: {self.email}
         """).strip())
 
     def greet_user(self):
         """Print a personalized greeting to user."""
-        print(f"Hello {self.first_name} {self.last_name}!")
+        print(f"Hello {self.first_name.title()} {self.last_name.title()}!")
         print(f"We setup your profile with the username '{self.user_name}'.")
 
     def increment_login_attempts(self):
@@ -41,22 +41,22 @@ class User:
         print(f"Login Attempts: {self.login_attempts}")
 
 
-my_user = User(
-    'Jackie',
-    'Dallas',
-    32,
-    'Male',
-    'jackieray24',
-    'jdallas@gmail.com'
-    )
+# my_user = User(
+#     'Jackie',
+#     'Dallas',
+#     32,
+#     'Male',
+#     'jackieray24',
+#     'jdallas@gmail.com'
+#     )
 
-my_user.describe_user()
-my_user.greet_user()
-my_user.increment_login_attempts()
-my_user.increment_login_attempts()
-my_user.increment_login_attempts()
-my_user.show_login_attempts()
-# print(my_user.login_attempts)
-my_user.reset_login_attempts()
-# print(my_user.login_attempts)
-my_user.show_login_attempts()
+# my_user.describe_user()
+# my_user.greet_user()
+# my_user.increment_login_attempts()
+# my_user.increment_login_attempts()
+# my_user.increment_login_attempts()
+# my_user.show_login_attempts()
+# # print(my_user.login_attempts)
+# my_user.reset_login_attempts()
+# # print(my_user.login_attempts)
+# my_user.show_login_attempts()
