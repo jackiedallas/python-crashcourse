@@ -9,5 +9,6 @@ def greet_users(names):
         message = f"Hello, {name.title()}!"
         print(message)
 
+
 usernames = [fake.first_name().lower() for _ in range(10)]
 greet_users(usernames)
