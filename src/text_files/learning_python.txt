@@ -1,5 +1,0 @@
-In Python you can analyze large amounts of data in seconds.
-In Python you can create Classes.
-In Python you can implement Inheritance.
-In Python you can iterate using for, do while, and while loops.
-In Python you can control program flow using IF statements.
