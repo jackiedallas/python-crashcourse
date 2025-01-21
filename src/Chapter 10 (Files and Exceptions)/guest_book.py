@@ -19,4 +19,3 @@ else:
     with open(file_path, "a") as file:
         for guest in content:
             file.write("\n" + guest)
-        file.write("\n" + content)
