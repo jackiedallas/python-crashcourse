@@ -6,8 +6,14 @@ country name. The function should return a single string of the form
 City, Country, such as Santiago, Chile. 
 """
 
-def get_formatted_location(city, country):
+def get_formatted_location(city, country, population=''):
     """Generate formatted city, country format"""
-    formatted_location = f"{city}, {country}"
+    if population:
+        pop_int = int(population)
+        formatted_location = f"{city}, {country} - Population: {pop_int.__format__(',.0f')}"
+    else:
+        formatted_location = f"{city}, {country}"
     return formatted_location.title()
-    
+
+print(get_formatted_location('aviano', 'italy'))
+print(get_formatted_location('paris', 'france', '686000000'))   
