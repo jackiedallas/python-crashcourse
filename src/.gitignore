@@ -1,7 +1,5 @@
-# Byte-compiled files
-*.pyc
-*.pyo
 __pycache__/
-*.pyd
+*.py[cod]
+.pytest_cache/
 /text_files/
 /json/
