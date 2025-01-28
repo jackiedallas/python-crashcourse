@@ -1,2 +1,7 @@
+# Byte-compiled files
+*.pyc
+*.pyo
+__pycache__/
+*.pyd
 /text_files/
 /json/
