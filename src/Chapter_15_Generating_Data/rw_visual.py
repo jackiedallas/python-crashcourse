@@ -4,19 +4,23 @@ from random_walk import RandomWalk
 # Keep making new walks as long as the program is active
 while True:
     # make a random walk
-    rw = RandomWalk(num_points=50_000)
+    rw = RandomWalk(num_points=5_000)
     rw.fill_walk()
 
     # plot the points in the walk
     plt.style.use('classic')
     fig, ax = plt.subplots()
     point_numbers = range(rw.num_points)
-    ax.scatter(rw.x_values, rw.y_values, c=point_numbers, cmap=plt.cm.Blues, edgecolors='none', s=1)
+    # ax.scatter(rw.x_values, rw.y_values, c=point_numbers, cmap=plt.cm.Blues, edgecolors='none', s=1)
     ax.set_aspect('equal')
     
     # emphasize the first and last points
-    ax.scatter(0, 0, c='green', edgecolors='none', s=100)
-    ax.scatter(rw.x_values[-1], rw.y_values[-1], c='red', edgecolors='none', s=100)
+    ax.scatter(0, 0, c='green', edgecolors='none', s=25)
+    ax.scatter(rw.x_values[-1], rw.y_values[-1], c='red', edgecolors='none', s=25)
+    
+    # grain of pollen on surface of a drop of water
+    ax.plot(rw.x_values, rw.y_values, c='gray', linewidth=0.5)
+    
     
     # remove the axes
     ax.get_xaxis().set_visible(False)
